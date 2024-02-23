@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>Shopping</title>
+    </head>
+    <body>
+        <header>
+            <div class="container"> <!--  here i don't prefer to do display flex to container because it is a bootsrapt class --> 
+                <div class="header_cont">
+                    <a href="indix.html" class="brand">Shopping Card</a>
+                    <nav>
+                        <ul id="links">
+                          <li><a href="login.html">sign In</a></li>
+                          <li><a href="register.html">sign Up</a></li>  
+                        </ul>
+                        <ul id="user_info">
+                         <li><a href="#" id="user"></a></li>
+                         <li class="shopping-carts" ">
+                              <i class="fa-solid fa-shopping-cart"></i>
+                             <span class="badge"></span>
+                             <div class="carts-products">
+                                <div></div>
+                                <a href="addtocart.html">View all products</a>
+                             </div>
+                        </li>
+                         <li><a href="#" id="logout">log out</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                   
+                
+            </div>
+           
+        </header>
+        <section class="home">
+            <div class="container">
+                <form >
+                        
+                    <label for=""><i class="fa-solid fa-magnifying-glass"></i></label>
+                    <input type="text" class="search-input" placeholder="search by name">
+
+                </form>
+                <div class="products"> </div>
+            </div>
+        </section>
+    <!--  very important to defined dattam.js before script.js because you used products in script.js-->
+    <script src="js/user.js"></script>
+    <script src="js/Datta.js"></script>
+    <script src="js/script.js"></script>
+
+       
+
+    </body>
+</html>
